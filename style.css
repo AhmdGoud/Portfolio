@@ -7,8 +7,9 @@
     --prime-bg-color: ;
 }
 body{
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", 
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: black;
 }
 .container{
     width: 50%;
@@ -36,7 +37,35 @@ nav, section, footer{
 .navbar{
     display: flex;
     justify-content: space-between;
-    padding-top: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .03), 0 2px 4px rgba(0, 0, 0, .05), 0 12px 24px rgba(0, 0, 0, .05);
+}
+.socails{
+    display: flex;
+}
+.socails ion-icon{
+    font-size: 22px;
+}
+.socails ion-icon:hover, .socails i:hover{
+    transform: scale(1.1);
+}
+nav .container{
+    padding: 5px 0;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info p{
+    font-size: 18px;
+    font-weight: 400;
+}
+img{
+    width: 120px;
+    border-radius: 50%;
 }
 .skills ul{
     display: flex;
@@ -44,14 +73,31 @@ nav, section, footer{
     flex-wrap: wrap;
 }
 .skills ul li{
-    background-color: #d3d3d3;
+    background-color: black;
+    color: white;
     padding: 3px 8px;
-    border-radius: 3px;
+    border-radius: 10px;
 }
-
-.socails ion-icon{
-    font-size: 22px;
+.techused span{
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #e0e0e0;
+    color: black;
+    border-radius: 5px;
+    padding: 3px 8px;
+    font-size: 12px;
+    font-weight: 500;
 }
-.socails ion-icon:hover, .socails i:hover{
-    transform: scale(1.1);
+.card-body .btn{
+    background-color: black;
+    border-color: black;
+    padding: 3px 8px;
+}
+footer{
+    margin-top: 50px;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
