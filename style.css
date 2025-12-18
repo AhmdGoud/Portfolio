@@ -88,10 +88,23 @@ img{
     font-size: 12px;
     font-weight: 500;
 }
+.card{
+    transition: .3s;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card-img-top{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
 .card-body .btn{
     background-color: black;
     border-color: black;
     padding: 3px 8px;
+}
+.btn-primary:hover{
+    background-color: blueviolet;
 }
 footer{
     margin-top: 50px;
