@@ -3,29 +3,39 @@
     padding: 0;
 }
 :root{
-    --prime-txt-color: ;
-    --prime-bg-color: ;
+    --prime-bg-color: white;
+    --prime-txt-color: black;
+    --secondery-bg-color: black;
+    --secondery-txt-color: white;
+}
+.theme{
+    --prime-bg-color: black;
+    --prime-txt-color: white;
+    --secondery-bg-color: white;
+    --secondery-txt-color: black;
 }
 body{
     font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", 
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    color: black;
+    background-color: var(--prime-bg-color);
+    color: var(--prime-txt-color);
 }
 .container{
     width: 50%;
     margin: auto;
     padding: 20px 0;
 }
+
 li{
     list-style-type: none;
 }
 a{
     text-decoration: none;
-    color: black;
+    color: var(--prime-txt-color);
     margin-right: 10px;
     transition: .2s;
 }
-.info a:hover{
+.contact a:hover{
     color: blue;
     margin-left: 5px;
 }
@@ -33,24 +43,6 @@ nav, section, footer{
     width: 100%;
 }
 
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    border-radius: 20px;
-    background-color: #f5f5f5;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, .03), 0 2px 4px rgba(0, 0, 0, .05), 0 12px 24px rgba(0, 0, 0, .05);
-}
-.socails{
-    display: flex;
-}
-.socails ion-icon{
-    font-size: 22px;
-}
-.socails ion-icon:hover, .socails i:hover{
-    transform: scale(1.1);
-}
 nav .container{
     padding: 5px 0;
 }
@@ -73,10 +65,11 @@ img{
     flex-wrap: wrap;
 }
 .skills ul li{
-    background-color: black;
-    color: white;
+    background-color: var(--secondery-bg-color);
+    color: var(--secondery-txt-color);
     padding: 3px 8px;
     border-radius: 10px;
+    font-weight: 400;
 }
 .techused span{
     display: inline-block;
@@ -90,6 +83,13 @@ img{
 }
 .card{
     transition: .3s;
+    width: 45%;
+    color: revert-layer;
+    background-color: var(--prime-bg-color);
+    border-color: #e0e0e0;
+}
+.card-body{
+    background-color: var(--prime-bg-color);
 }
 .card:hover{
     transform: scale(1.05);
@@ -99,18 +99,56 @@ img{
     border-bottom-right-radius: 5px;
 }
 .card-body .btn{
-    background-color: black;
-    border-color: black;
+    background-color: var(--secondery-bg-color);
+    border-color: var(--secondery-bg-color);
     padding: 3px 8px;
+    color: var(--secondery-txt-color);
+    padding: 0 5px;
 }
 .btn-primary:hover{
-    background-color: blueviolet;
+    background-color: rgb(83, 11, 150);
 }
 footer{
     margin-top: 50px;
+    /* position: sticky;
+    bottom: 0; */
 }
 footer .container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+.socails{
+    display: flex;
+}
+.socails ion-icon{
+    font-size: 22px;
+}
+.socails ion-icon:hover, .socails i:hover{
+    transform: scale(1.1);
+}
+
+
+@media (max-width:980px){
+    .container{
+        width: 70%;
+    }
+}
+@media (max-width:760px){
+    .container{
+        width: 100%;
+        padding: 0 10px;
+    }
+    .card{
+        width: 100%;
+    }
+    .about{
+        flex-direction: column-reverse;
+    }
+    .info{
+        align-self: flex-start;
+    }
+    .contact{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 }
