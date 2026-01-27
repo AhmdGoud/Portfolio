@@ -1,129 +1,274 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <!-- <nav>
-        <div class="container navbar">
-            <div class="mode"><ion-icon name="invert-mode-outline" style="font-size: 22px;"></ion-icon></div>
-            
-        </div>
-    </nav> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmed Abdel-Rahman</title>
+    <link rel="stylesheet" href="./style.css" />
 
-    <section style="margin-top: 50px;">
-        <div class="container about">
-            <div class="info">
-                <h1 class="name">Hi, &#128075 It's me <br> Ahmed Abdel-Rahman.</h1>
-                <p>A passionate Front-end developer trying to go BIG</p>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav-header">
+          <div class="avatar">
+            <img class="grayscale" src="./pics/pic2.jpg" />
+          </div>
+          <div style="margin-bottom: -66px">
+            <h1 class="name">Ahmed Abdel-Rahman</h1>
+            <p class="tagline">Front-end Web Developer</p>
+          </div>
+          <button
+            style="margin-top: -37px"
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <svg
+              class="sun-icon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="moon-icon"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="nav-links" style="margin-top: 44px">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="section" id="home">
+        <h2 class="section-title">Hello ~</h2>
+        <p class="intro">
+          I'm a front-end web developer from Egypt, building modern web
+          interfaces with a focus on user experience and performance. Taught by
+          the web itself, I love experimenting with new technologies and create
+          awesome things.
+        </p>
+        <p class="intro">
+          I'm a developer enthusiast, and technical writer. I work primarily
+          with JavaScript, TypeScript and React, though I'm always learning new
+          things. Currently focused on building with the T3 stack and exploring
+          the latest in web development.
+        </p>
+
+        <div class="work-state">
+          <div class="work-label"></div>
+          <div class="work-info">
+            <div class="work-state-card"></div>
+            <div class="card-info">
+              <div class="state">Currently open to wrok</div>
+              <div class="relocate">Open to relocate</div>
             </div>
-            <img src="pics/profile pic.jpg" alt="">
+          </div>
         </div>
+      </section>
 
-        <div class="container contact">
-            <a href="mailto:ahmedabdelrahman1509@gmail.com">Contact me <ion-icon name="mail-outline"></ion-icon></a>
-            <a href="https://drive.google.com/file/d/1NJOhCW-Zr5lS40_BpNF1xUqlbbsdzr1C/view?usp=drive_link" target="_blank">
-                Download Resume <ion-icon name="download-outline"></ion-icon></a>
-        </div>
-    </section>
-
-    <section>
-        <div class="container skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>React</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Tailwind</li>
-                <li>Git</li>
-                <li>Gitub</li>
-                <li>Postman</li>
-                <li>Responsive Design</li>
-                <li>RESTFul API's</li>
-            </ul>
-        </div>
-    </section>
-
-    <section>
-        <div class="container projects">
-            <h2>Projects</h2>
-            <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
-                <div class="card">
-                    <img src="./pics/villa-app-pic.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Villa-Agancey</h5>
-                        <p class="card-text">A modern real estate website showcasing luxury villas in Sharjah with a clean design, 
-                            smooth navigation, and clear call-to-action features.</p>
-                            <p class="techused">
-                                <span>JavaScript</span>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                            </p>
-                        <a href="https://github.com/AhmdGoud/Villa-Agency" target="_blank" class="btn btn-primary">Github</a>
-                        <a href="#" target="_blank" class="btn btn-primary">Website</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./pics/scolar-app-pic.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Scholar-Platform</h5>
-                        <p class="card-text">A modern e-learning platform website designed to promote online courses with a clean interface, 
-                            intuitive navigation, and strong call-to-action elements.</p>
-                            <p class="techused">
-                                <span>JavaScript</span>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                            </p>
-                        <a href="https://github.com/AhmdGoud/Scholar-Platform" target="_blank" class="btn btn-primary">Github</a>
-                        <a href="#" target="_blank" class="btn btn-primary">Website</a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="./pics/car-show-pic.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Car-Show</h5>
-                        <p class="card-text">A modern car dealership landing page showcasing a bold hero layout, clean navigation, 
-                            and a strong call-to-action for an engaging user experience.</p>
-                            <p class="techused">
-                                <span>JavaScript</span>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                            </p>
-                        <a href="https://github.com/AhmdGoud/Car-Show" target="_blank" class="btn btn-primary">Github</a>
-                        <a href="#" target="_blank" class="btn btn-primary">Website</a>
-                    </div>
-                </div>
+      <section class="section" id="work">
+        <h2 class="section-title">Projects ~</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Car-Show</h3>
+              <a href="#" class="github-link">GitHub →</a>
+              <a href="#" class="project-link">Demo →</a>
             </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="rights">&#169 Ahmed Abdel-Rahman</div>
-            <div class="socails">
-                <ul style="display: flex; align-items: center;">
-                    <li><a target="_blank" href="https://github.com/AhmdGoud"><ion-icon name="logo-github"></ion-icon></a></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/ahmed-abdelrahman-7ab52b231/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                    <!-- <li><a href="https://x.com/AGahmedgouda"><i class="devicon-twitter-original"></i></a></li> -->
-                </ul>
-                <div class="mode"><ion-icon name="sunny-outline"></ion-icon></div>
-                <!-- <ion-icon name="moon-outline"></ion-icon> -->
+            <p class="project-description">
+              A modern car dealership landing page showcasing a bold hero
+              layout, clean navigation, and a strong call-to-action for an
+              engaging user experience.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Html</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">CLI</span>
+              <span class="tech-tag">Vercel</span>
             </div>
-        </div>
-    </footer>
+          </div>
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Villa-Agancey</h3>
+              <a href="#" class="github-link">GitHub →</a>
+              <a href="#" class="project-link">Demo →</a>
+            </div>
+            <p class="project-description">
+              A modern real estate website showcasing luxury villas in Sharjah
+              with a clean design, smooth navigation, and clear call-to-action
+              features.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Html</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
 
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+          <div class="project-card">
+            <div class="project-header">
+              <h3 class="project-title">Scholar-Platform</h3>
+              <a href="#" class="github-link">GitHub →</a>
+              <a href="#" class="project-link">Demo →</a>
+            </div>
+            <p class="project-description">
+              A modern e-learning platform website designed to promote online
+              courses with a clean interface, intuitive navigation, and strong
+              call-to-action elements.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Html</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="Skills">
+        <h2 class="section-title">Tech i work with ~</h2>
+        <div class="tech-list">
+          <span>
+            <i class="devicon-javascript-plain colored"></i>
+          </span>
+          <span>
+            <i class="devicon-html5-plain colored"></i>
+          </span>
+          <span>
+            <i class="devicon-css3-plain colored"></i>
+          </span>
+          <span>
+            <i class="devicon-react-original colored"></i>
+          </span>
+          <span>
+            <i class="devicon-tailwindcss-original colored"></i>
+          </span>
+          <span>
+            <i class="devicon-bootstrap-plain colored"></i>
+          </span>
+          <span>
+            <i class="devicon-axios-plain colored"></i>
+          </span>
+          <span>
+            <i class="devicon-git-plain colored"></i>
+          </span>
+          <span id="github">
+            <i class="devicon-github-original colored"></i>
+          </span>
+          <span>
+            <i class="devicon-postman-plain colored"></i>
+          </span>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <h2 class="section-title">Experience ~</h2>
+        <div class="experience-list">
+          <div class="experience-item">
+            <div class="experience-period">2025 - Present</div>
+            <h3 class="experience-title">Frontend Developer</h3>
+            <p class="experience-company">Freelance</p>
+            <p class="experience-description">
+              Developed responsive websites and web applications for various
+              clients. Worked with React, JavaScript, and modern tooling to
+              deliver high-quality products on time.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <h2 class="section-title">Find me here ~</h2>
+        <div class="social-links">
+          <a
+            href="https://github.com/AhmdGoud"
+            class="social-card"
+            target="_blank"
+          >
+            <div>
+              <div class="social-name">GitHub</div>
+              <div class="social-handle">AhmdGoud</div>
+            </div>
+            <div class="social-icon">→</div>
+          </a>
+
+          <a href="https://x.com/goudaa067" class="social-card" target="_blank">
+            <div>
+              <div class="social-name">Twitter</div>
+              <div class="social-handle">@goudaa067</div>
+            </div>
+            <div class="social-icon">→</div>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/ahmed-abdelrahman-7ab52b231/"
+            class="social-card"
+            target="_blank"
+          >
+            <div>
+              <div class="social-name">LinkedIn</div>
+              <div class="social-handle">Ahmed AbdelRahman</div>
+            </div>
+            <div class="social-icon">→</div>
+          </a>
+
+          <a href="mailto:ahmedabdelrahman1509@gmail.com" class="social-card">
+            <div>
+              <div class="social-name">Email</div>
+              <div class="social-handle">ahmedabdelrahman1509@gmail.com</div>
+            </div>
+            <div class="social-icon">→</div>
+          </a>
+
+          <a
+            href="https://docs.google.com/document/d/15y00qr2QG05J8qnkhmgAVc20Ayd0VzktYV6yK79Lrbc/edit?usp=drive_link"
+            class="social-card"
+            target="_blank"
+          >
+            <div>
+              <div class="social-name">CV</div>
+              <div class="social-handle">read.cv/Ahmed Abdel-Rahman</div>
+            </div>
+            <div class="social-icon">→</div>
+          </a>
+        </div>
+      </section>
+
+      <footer>Made by Ahmed Abdel-Rahman</footer>
+    </div>
+    <script src="/script.js"></script>
+  </body>
 </html>

@@ -1,13 +1,18 @@
-// still has to be done
-// 1- conatct info
-// 2- upload resume
+// Theme Toggle Functionality
+const themeToggle = document.getElementById("themeToggle");
+const body = document.body;
 
-const mode = document.querySelector('.mode')
-mode.addEventListener('click', function(){
-    document.body.classList.toggle('theme')
-    if (document.body.classList.contains('theme')){
-        mode.innerHTML = '<ion-icon name="moon-outline"></ion-icon>'
-    }else{
-        mode.innerHTML = '<ion-icon name="sunny-outline"></ion-icon>'
-    }
-})
+// Check for saved theme preference or default to light mode
+const currentTheme = localStorage.getItem("theme") || "light";
+if (currentTheme === "dark") {
+  body.classList.add("dark-theme");
+}
+
+// Toggle theme on button click
+themeToggle.addEventListener("click", function () {
+  body.classList.toggle("dark-theme");
+
+  // Save theme preference to localStorage
+  const theme = body.classList.contains("dark-theme") ? "dark" : "light";
+  localStorage.setItem("theme", theme);
+});
